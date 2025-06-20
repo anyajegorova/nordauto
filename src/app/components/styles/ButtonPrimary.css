@@ -1,0 +1,17 @@
+.button-primary {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  padding: 0.85rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-transform: uppercase;
+}
+
+.button-primary:hover {
+  background: var(--neutral);
+  color: var(--primary);
+}

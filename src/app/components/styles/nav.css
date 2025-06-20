@@ -1,0 +1,38 @@
+/* Sticky nav bar styles */
+.nav-sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 3rem;
+  min-height: 80px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-icon {
+  color: var(--white);
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon:hover {
+  color: var(--accent);
+}
