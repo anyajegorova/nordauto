@@ -79,6 +79,12 @@
   opacity: 1;
 }
 
+.history-highlight {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
 @media (max-width: 900px) {
   .history-container {
     flex-direction: column;
