@@ -14,10 +14,14 @@
 }
 
 .nav-logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--white);
-  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-img {
+  height: 4rem;
+  width: auto;
+  display: block;
 }
 
 .nav-actions {
@@ -34,5 +38,25 @@
 }
 
 .nav-icon:hover {
+  color: var(--accent);
+}
+
+.nav-contact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.nav-contact-icon {
   color: var(--accent);
 }
