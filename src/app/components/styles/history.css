@@ -1,0 +1,115 @@
+.history-container {
+  padding: 2rem;
+  background: var(--dark);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history-content {
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  margin-top: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.history-text-signature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+}
+
+.history-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: justify;
+}
+
+.history-content p {
+  color: var(--white);
+  line-height: 1.7;
+  white-space: pre-line;
+  font-size: 1.5rem;
+}
+
+.history-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 2rem;
+  max-width: 600px;
+  height: 650px;
+}
+
+.history-image img {
+  width: 100%;
+  height: 100%;
+  background: var(--secondary);
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), 0 1.5px 6px rgba(0, 0, 0, 0.1);
+  border: 3px solid var(--secondary);
+  transition: box-shadow 0.3s;
+}
+
+.history-signature {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.history-signature img {
+  max-width: 300px;
+  width: auto;
+  filter: grayscale(0.2) contrast(1.2);
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.history-signature img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .history-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  .history-content {
+    flex-direction: column;
+  }
+  .history-text-signature {
+    width: 100%;
+  }
+  .history-image {
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 1.5rem;
+    height: 300px;
+  }
+  .history-image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .history-signature {
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  .history-signature img {
+    height: 64px;
+    max-width: 180px;
+  }
+}
