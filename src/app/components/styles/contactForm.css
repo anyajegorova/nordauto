@@ -1,0 +1,116 @@
+/* Contact Form Styles */
+.contact-form-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contact-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.5) grayscale(0.2);
+}
+
+.contact-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(248, 249, 250, 0.85); /* var(--white) with opacity */
+  box-shadow: 0 4px 32px rgba(27, 38, 59, 0.15);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  max-width:  1200px;
+  width: 100%;
+}
+
+.contact-info {
+  flex: 1;
+  color: var(--primary);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-info h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-family: var(--font-bebas-neue);
+  line-height: 1.1;
+}
+
+.contact-info a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.contact-info .contact-icon {
+  color: var(--accent);
+  vertical-align: middle;
+  margin-right: 0.5em;
+  width: 1.4em;
+  height: 1.4em;
+  display: inline-block;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 100%;
+  height: auto;
+}
+
+.contact-form label {
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-bottom: 2px solid var(--neutral);
+  background: transparent;
+  color: var(--primary);
+  font-size: 1rem;
+  resize: none;
+  transition: border-bottom 0.2s;
+  font-family: var(----font-exo2);
+  border-radius: 0;
+}
+
+.contact-form textarea {
+  margin-bottom: 1.2rem;
+  flex: 1;
+  min-height: 0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-bottom: 3.5px solid var(--accent);
+}
+
+@media (max-width: 700px) {
+  .contact-overlay {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 1rem;
+  }
+}
