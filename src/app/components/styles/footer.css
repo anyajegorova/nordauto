@@ -126,3 +126,53 @@
     padding: 0 1.2rem;
   }
 }
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 2.5rem 1.2rem 0 1.2rem;
+  }
+  .footer-content {
+    gap: 1rem;
+    padding: 0 1.2rem;
+  }
+  .footer-section {
+    margin-bottom: 1.5rem;
+  }
+  .company-info h3 {
+    font-size: 1.25rem;
+  }
+  .company-info p {
+    font-size: 1rem;
+  }
+  .footer-links a, .footer-extra-links a {
+    font-size: 1rem;
+  }
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+  .footer-bottom {
+    font-size: 0.95rem;
+    padding: 1rem 0 0.7rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 1.2rem 0.7rem 0 0.7rem;
+  }
+  .footer-content {
+    gap: 0.7rem;
+    padding: 0 0.7rem;
+  }
+  .footer-logo {
+    width: 90px;
+  }
+  .company-info h3 {
+    font-size: 1rem;
+  }
+  .footer-bottom {
+    font-size: 0.85rem;
+    padding: 0.7rem 0 0.5rem 0;
+  }
+}
