@@ -15,3 +15,25 @@
   background: var(--neutral);
   color: var(--primary);
 }
+
+@media (max-width: 1024px) {
+  .button-primary {
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-primary {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-primary {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    border-radius: 9px;
+  }
+}
