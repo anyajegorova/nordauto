@@ -66,11 +66,52 @@
   color: #222;
 }
 
+@media (max-width: 1160px) {
+  .hero-section {
+    min-height: 70vh;
+    padding: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .hero-slider-wrapper {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    width: 100vw;
+    min-height: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @media (max-width: 600px) {
   .hero-call-message {
     top: 0.5rem;
     right: 0.5rem;
     font-size: 1rem;
     padding: 0.5rem 1rem;
+  }
+  .hero-section {
+    min-height: 70vh;
+    padding: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .hero-slider-wrapper {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    width: 100vw;
+    min-height: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
