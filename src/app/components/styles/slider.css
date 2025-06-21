@@ -9,9 +9,13 @@
 
 .slider-container {
   width: 100%;
-  display: flex;
+  max-width: 70vw;
+  max-height: 70vh;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .slider-image {
@@ -22,6 +26,7 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1);
+  display: block;
 }
 
 .slider-image.fade-out {
@@ -58,4 +63,53 @@
 
 .slider-btn:hover {
   background: rgba(200,200,200,0.9);
+}
+
+.slider-call-message {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #fff200;
+  color: #222;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  z-index: 3;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slider-call-message a {
+  color: #222;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.slider-call-icon {
+  color: #222;
+}
+
+@media (max-width: 600px) {
+  .slider-container {
+    max-width: 98vw;
+    max-height: 40vh;
+  }
+  .slider-image {
+    max-width: 98vw;
+    max-height: 40vh;
+  }
+  .slider-call-message {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    max-width: 95%;
+  }
 }

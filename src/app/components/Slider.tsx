@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react'
 import './styles/slider.css'
-import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
+import { ChevronLeftIcon, ChevronRightIcon, Phone } from 'lucide-react';
 
 interface SliderProps {
   images: string[];
@@ -34,6 +34,10 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
           alt={`slide-${current}`}
           className="slider-image"
         />
+        <div className="slider-call-message">
+          <Phone size={22} className="slider-call-icon" />
+          <span>Call us now: <a href="tel:+358401234567">+358 40 123 4567</a></span>
+        </div>
       </div>
       <button className="slider-btn right" onClick={nextSlide} aria-label="Next image">
         <ChevronRightIcon />
