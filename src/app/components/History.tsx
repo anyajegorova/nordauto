@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles/footer.css'
 import './styles/history.css'
 import { autoMechanicsHistory } from '../data/history'
 import LargeText from './LargeText'
@@ -21,7 +20,7 @@ const highlightWords = [
 
 function highlightText(text: string) {
   let result = text;
-  highlightWords.forEach(({ word, key }) => {
+  highlightWords.forEach(({ word }) => {
     const regex = new RegExp(`(${word})`, 'gi');
     result = result.replace(regex, `<span class='history-highlight'>$1</span>`);
   });

@@ -165,7 +165,7 @@
     right: auto;
   }
   .slider-call-message {
-    top: 0.5rem;
+    top: 1.5rem;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
@@ -241,7 +241,7 @@
     right: auto;
   }
   .slider-call-message {
-    top: 0.5rem;
+    top: 1rem;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
