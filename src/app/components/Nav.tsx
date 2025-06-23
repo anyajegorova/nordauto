@@ -44,7 +44,7 @@ const Nav = () => {
               <Linkedin size={20} />
             </a>
           </div>
-          <ButtonPrimary>Get in touch</ButtonPrimary>
+          <ButtonPrimary href="#contact-form">Get in touch</ButtonPrimary>
         </div>
       </nav>
     </>

@@ -7,7 +7,7 @@ import Map from './Map';
 
 const ContactForm = () => {
   return (
-    <div className="contact-form-container">
+    <div className="contact-form-container" id="contact-form">
       <video className="contact-bg-video" autoPlay loop muted playsInline>
         <source src="/car-polishing.mp4" type="video/mp4" />
         Your browser does not support the video tag.
