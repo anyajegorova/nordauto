@@ -23,6 +23,7 @@
 @media (max-width: 600px) {
   .large-text {
     font-size: 2.5rem;
-    max-width: 95vw;
+    max-width: 100%;
+    text-align: center;
   }
 }
